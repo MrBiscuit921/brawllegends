@@ -3,32 +3,32 @@
 import React, { useState, useEffect } from "react";
 import "./PredictiveInput.css";
 const PredictiveInput = () => {
-  const [words, setWords] = useState(
+  const [words] = useState(
     [
       "Apple",
-      "Pencil",
-      "Pen",
+      "Ash",
+      "Ball",
+      "Bat",
+      "Bell",
       "Chair",
-      "Helmet",
-      "Grapes",
-      "Tub",
-      "Trophy",
+      "Chat",
       "Cookie",
       "Donut",
-      "Shirt",
-      "Bat",
-      "Ash",
-      "Bell",
-      "Chat",
-      "Ball",
       "Eye",
+      "Fan",
       "Fish",
-      "Zip",
       "Game",
+      "Grapes",
+      "Helmet",
+      "Ice",
       "Juice",
       "Orange",
-      "Fan",
-      "Ice",
+      "Pen",
+      "Pencil",
+      "Shirt",
+      "Trophy",
+      "Tub",
+      "Zip",
     ].sort()
   );
 
