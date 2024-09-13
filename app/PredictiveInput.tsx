@@ -44,7 +44,7 @@ const PredictiveInput = () => {
   };
 
   const caseCheck = (word: string) => {
-    let wordArray = word.split("");
+    const wordArray = word.split("");
     for (let i = 0; i < inputValue.length; i++) {
       if (inputValue[i] === wordArray[i]) {
         continue;
@@ -68,8 +68,8 @@ const PredictiveInput = () => {
 
     setInputValue(value);
     clearSuggestion();
-    let regex = new RegExp("^" + value, "i");
-    for (let i in words) {
+    const regex = new RegExp("^" + value, "i");
+    for (const i in words) {
       if (regex.test(words[i]) && value !== "") {
         setSuggestion(caseCheck(words[i]));
         break;
