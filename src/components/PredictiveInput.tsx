@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import "./PredictiveInput.css";
-const PredictiveInput = () => {
+export const PredictiveInput = () => {
   const [words] = useState(
     [
       "Apple",
@@ -88,9 +88,8 @@ const PredictiveInput = () => {
 
   return (
     //type the legend box
-    <div className="relative bg-white w-[25em] h-[4.4em] rounded-[5px]">
+    <div>
       <input
-        className=" bg-transparent absolute w-[inherit] h-[inherit] text-black text-[25px] z-[3] px-[18px] py-0 border-[none] outline: 0"
         type="text"
         id="input"
         value={inputValue}
@@ -99,14 +98,7 @@ const PredictiveInput = () => {
         placeholder="Legend Name"
         autoComplete="off"
       />
-      <span
-        className="w-[inherit] h-[inherit] absolute z-[2] top-0 left-0 flex items-center py-[0] px-[18px] text-[25px] text-[#868686]    "
-        id="suggestion"
-      >
-        {suggestion}
-      </span>
+      <span id="suggestion">{suggestion}</span>
     </div>
   );
 };
-
-export default PredictiveInput;
