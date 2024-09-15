@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import "./PredictiveInput.css";
 export const PredictiveInput = () => {
+  const [isMounted, setIsMounted] = useState(false);
   const [words] = useState(
     [
       "Bödvar",
@@ -75,6 +76,7 @@ export const PredictiveInput = () => {
   const [suggestion, setSuggestion] = useState("");
 
   useEffect(() => {
+    setIsMounted(true);
     clearSuggestion();
   }, []);
 
@@ -124,6 +126,7 @@ export const PredictiveInput = () => {
       clearSuggestion();
     }
   };
+  if (!isMounted) return null;
 
   return (
     //type the legend box
