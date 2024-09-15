@@ -15,12 +15,13 @@ body {
   position: relative;
   background-color: #ffffff;
   width: 25em;
-  height: 4.4em;
+  height: 3em;
   border-radius: 5px;
 }
 input {
   outline: none;
   border: none;
+  background-color: transparent;
   position: absolute;
   width: inherit;
   height: inherit;

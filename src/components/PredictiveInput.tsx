@@ -88,14 +88,14 @@ export const PredictiveInput = () => {
 
   return (
     //type the legend box
-    <div>
+    <div className="input-container">
       <input
-        type="text"
         id="input"
+        type="text"
         value={inputValue}
         onChange={handleInput}
         onKeyDown={handleKeyDown}
-        placeholder="Legend Name"
+        placeholder="Start typing..."
         autoComplete="off"
       />
       <span id="suggestion">{suggestion}</span>
