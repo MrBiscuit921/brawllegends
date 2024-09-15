@@ -5,30 +5,69 @@ import "./PredictiveInput.css";
 export const PredictiveInput = () => {
   const [words] = useState(
     [
-      "Apple",
-      "Ash",
-      "Ball",
-      "Bat",
-      "Bell",
-      "Chair",
-      "Chat",
-      "Cookie",
-      "Donut",
-      "Eye",
-      "Fan",
-      "Fish",
-      "Game",
-      "Grapes",
-      "Helmet",
-      "Ice",
-      "Juice",
-      "Orange",
-      "Pen",
-      "Pencil",
-      "Shirt",
-      "Trophy",
-      "Tub",
-      "Zip",
+      "Bödvar",
+      "Cassidy",
+      "Orion",
+      "Lord Vraxx",
+      "Gnash",
+      "Queen Nai",
+      "Hattori",
+      "Thatch",
+      "Ada",
+      "Scarlet",
+      "Sentinel",
+      "Sir Roland",
+      "Lucien",
+      "Teros",
+      "Brynn",
+      "Asuri",
+      "Barraza",
+      "Ember",
+      "Azoth",
+      "Koji",
+      "Ulgrim",
+      "Diana",
+      "Jhala",
+      "Kor",
+      "Wu Shang",
+      "Val",
+      "Ragnir",
+      "Cross",
+      "Mirage",
+      "Nix",
+      "Mordex",
+      "Yumiko",
+      "Artemis",
+      "Caspian",
+      "Sidra",
+      "Xull",
+      "Kaya",
+      "Isaiah",
+      "Jiro",
+      "Lin Fei",
+      "Zariel",
+      "Rayman",
+      "Dusk",
+      "Fait",
+      "Thor",
+      "Petra",
+      "Vector",
+      "Volkov",
+      "Onyx",
+      "Jaeyun",
+      "Mako",
+      "Magyar",
+      "Reno",
+      "Munin",
+      "Arcadia",
+      "Ezio",
+      "Tezca",
+      "Thea",
+      "Red Raptor",
+      "Loki",
+      "Seven",
+      "Vivi",
+      "Imugi",
     ].sort()
   );
 
@@ -88,17 +127,19 @@ export const PredictiveInput = () => {
 
   return (
     //type the legend box
-    <div className="input-container">
-      <input
-        id="input"
-        type="text"
-        value={inputValue}
-        onChange={handleInput}
-        onKeyDown={handleKeyDown}
-        placeholder="Start typing..."
-        autoComplete="off"
-      />
-      <span id="suggestion">{suggestion}</span>
-    </div>
+    <html lang="en">
+      <div className="input-container">
+        <input
+          id="input"
+          type="text"
+          value={inputValue}
+          onChange={handleInput}
+          onKeyDown={handleKeyDown}
+          placeholder="Legend Name"
+          autoComplete="off"
+        />
+        <span id="suggestion">{suggestion}</span>
+      </div>
+    </html>
   );
 };
