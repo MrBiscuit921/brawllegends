@@ -1,4 +1,4 @@
-import "./global.css"; // Import global styles if any
+import "./globals.css"; // Import global styles if any
 import React from "react";
 import PredictiveInput from "./components/PredictiveInput"; // Ensure the correct path to your component
 
@@ -10,12 +10,6 @@ export const metadata = {
 export default function RootLayout() {
   return (
     <html lang="en">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{metadata.title}</title>
-      </head>
-
       <body>
         <PredictiveInput />
       </body>
