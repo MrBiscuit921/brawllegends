@@ -2,8 +2,10 @@ import { PredictiveInput } from "../components/PredictiveInput"; // Ensure the c
 
 export default function Page() {
   return (
-    <body>
-      <PredictiveInput />
-    </body>
+    <html lang="en">
+      <body>
+        <PredictiveInput />
+      </body>
+    </html>
   );
 }

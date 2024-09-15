@@ -127,19 +127,17 @@ export const PredictiveInput = () => {
 
   return (
     //type the legend box
-    <html lang="en">
-      <div className="input-container">
-        <input
-          id="input"
-          type="text"
-          value={inputValue}
-          onChange={handleInput}
-          onKeyDown={handleKeyDown}
-          placeholder="Legend Name"
-          autoComplete="off"
-        />
-        <span id="suggestion">{suggestion}</span>
-      </div>
-    </html>
+    <div className="input-container">
+      <input
+        id="input"
+        type="text"
+        value={inputValue}
+        onChange={handleInput}
+        onKeyDown={handleKeyDown}
+        placeholder="Legend Name"
+        autoComplete="off"
+      />
+      <span id="suggestion">{suggestion}</span>
+    </div>
   );
 };
