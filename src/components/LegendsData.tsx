@@ -61,7 +61,7 @@ export const legends: Legend[] = [
       "Default",
       "Detention Ada",
       "DJ Ada",
-      "Fatal-Error Ada",
+      "Fatal Error Ada",
       "Heartblast",
       "Lovelaced Ada",
       "Stormlord Ada",
@@ -73,7 +73,7 @@ export const legends: Legend[] = [
   },
   // Adding a new legend
   {
-    name: "Arcadia",
+    name: "ARCADIA",
     skins: ["Default"],
     colors: colors,
   },
