@@ -1,9 +1,9 @@
-import { PredictiveInput } from "../components/PredictiveInput"; // Ensure the correct path to your component
-
+import React from "react";
+import Handler from "../components/Handler";
 export default function Page() {
   return (
     <body>
-      <PredictiveInput />
+      <Handler />
     </body>
   );
 }
