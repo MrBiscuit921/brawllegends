@@ -63,11 +63,11 @@ const App = () => {
         onChange={(e) => setSelectedColor(e.target.value)}
       />
 
-      <div className="relative mt-6 w-[400px] h-[400px]">
+      <div className="relative mt-6 w-[250px] h-[250px]">
         <Image
           src={`/images/${selectedLegend.name}/${selectedSkin}/${selectedLegend.name}_${selectedSkin}_${selectedColor}.png`}
           alt={`${selectedLegend.name} ${selectedSkin} ${selectedColor}`}
-          sizes="(max-width: 400px) 100vw"
+          sizes="(max-width: 400px) (max-height: 400px)"
           fill
           className="object-contain"
           priority

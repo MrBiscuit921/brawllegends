@@ -1,9 +1,5 @@
 import React from "react";
 import Handler from "../components/Handler";
 export default function Page() {
-  return (
-    <body>
-      <Handler />
-    </body>
-  );
+  return <Handler />;
 }
