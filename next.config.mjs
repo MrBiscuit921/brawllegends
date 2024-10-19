@@ -1,9 +1,10 @@
-// next.config.mjs
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   async headers() {
     return [
       {
-        source: "/(.*)", // Apply to all routes
+        // Apply to all routes
+        source: "/(.*)",
         headers: [
           {
             key: "Permissions-Policy",
@@ -14,3 +15,5 @@ module.exports = {
     ];
   },
 };
+
+export default nextConfig;
