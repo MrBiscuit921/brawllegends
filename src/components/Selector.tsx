@@ -14,18 +14,22 @@ const Selector: React.FC<SelectorProps> = ({
 }) => {
   return (
     <div className="mb-4">
-      <label className="block text-lg">{label}</label>
-      <select
-        value={value}
-        onChange={onChange}
-        className="mt-2 p-2 bg-gray-700 rounded-md"
-      >
-        {options.map((option) => (
-          <option key={option} value={option}>
-            {option}
-          </option>
-        ))}
-      </select>
+      <label className="block text-lg">
+        {label}
+        <br />
+        <select
+          value={value}
+          onChange={onChange}
+          className="mt-2 p-2 bg-gray-700 rounded-md text-base"
+          id={label}
+        >
+          {options.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
+      </label>
     </div>
   );
 };
