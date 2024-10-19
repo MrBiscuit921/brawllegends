@@ -13,14 +13,14 @@ const Selector: React.FC<SelectorProps> = ({
   onChange,
 }) => {
   return (
-    <div className="mb-4">
+    <div className="mb-4 ">
       <label className="block text-lg">
         {label}
         <br />
         <select
           value={value}
           onChange={onChange}
-          className="mt-2 p-2 bg-gray-700 rounded-md text-base"
+          className="mt-2 p-2 bg-gray-700 rounded-md text-base w-[200px]"
           id={label}
         >
           {options.map((option) => (
