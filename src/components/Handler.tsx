@@ -1,6 +1,6 @@
 // App.tsx
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Selector from "./Selector";
 import { legends } from "./LegendsData"; // Import legends data
@@ -21,10 +21,16 @@ const App = () => {
     );
   };
 
+  // Log the selected values to debug hydration issues
+  useEffect(() => {
+    console.log("Selected Legend:", selectedLegend.name);
+    console.log("Selected Skin:", selectedSkin);
+    console.log("Selected Color:", selectedColor);
+  }, [selectedLegend.name, selectedSkin, selectedColor]);
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-800 text-white">
       <h1 className="text-3xl mb-4">Brawlhalla Legends</h1>
-      {/* Legend Selector */}
       <div className="flex items-center mb-4">
         <button
           onClick={() => handleLegendChange("prev")}
@@ -43,7 +49,6 @@ const App = () => {
         </button>
       </div>
 
-      {/* Skin Selector */}
       <Selector
         label="Select Skin"
         value={selectedSkin}
@@ -51,7 +56,6 @@ const App = () => {
         onChange={(e) => setSelectedSkin(e.target.value)}
       />
 
-      {/* Color Selector */}
       <Selector
         label="Select Color"
         value={selectedColor}
@@ -59,14 +63,12 @@ const App = () => {
         onChange={(e) => setSelectedColor(e.target.value)}
       />
 
-      {/* Preview Image */}
-      <div className="mt-6">
+      <div className="relative mt-6 w-[400px] h-[400px]">
         <Image
           src={`/images/${selectedLegend.name}/${selectedSkin}/${selectedLegend.name}_${selectedSkin}_${selectedColor}.png`}
           alt={`${selectedLegend.name} ${selectedSkin} ${selectedColor}`}
-          layout="responsive"
-          width={270}
-          height={300}
+          sizes="(max-width: 400px) 100vw"
+          fill
           className="object-contain"
           priority
         />
@@ -74,4 +76,5 @@ const App = () => {
     </div>
   );
 };
+
 export default App;

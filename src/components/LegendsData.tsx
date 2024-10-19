@@ -62,7 +62,7 @@ export const legends: Legend[] = [
       "Detention Ada",
       "DJ Ada",
       "Fatal Error Ada",
-      "Heartblast",
+      "Heatblast",
       "Lovelaced Ada",
       "Stormlord Ada",
       "Technomancer Ada",
