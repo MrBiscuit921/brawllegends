@@ -74,7 +74,7 @@ export const legends: Legend[] = [
   // Adding a new legend
   {
     name: "ARCADIA",
-    skins: ["Default"],
+    skins: ["Default", "Briar Rose Arcadia"],
     colors: colors,
   },
   // You can add more legends in the same way

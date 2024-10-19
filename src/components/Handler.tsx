@@ -24,7 +24,6 @@ const App = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-800 text-white">
       <h1 className="text-3xl mb-4">Brawlhalla Legends</h1>
-
       {/* Legend Selector */}
       <div className="flex items-center mb-4">
         <button
@@ -66,9 +65,10 @@ const App = () => {
           src={`/images/${selectedLegend.name}/${selectedSkin}/${selectedLegend.name}_${selectedSkin}_${selectedColor}.png`}
           alt={`${selectedLegend.name} ${selectedSkin} ${selectedColor}`}
           layout="responsive"
-          width={100}
-          height={100}
+          width={270}
+          height={300}
           className="object-contain"
+          priority
         />
       </div>
     </div>
