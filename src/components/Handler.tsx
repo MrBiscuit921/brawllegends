@@ -1,6 +1,6 @@
 // App.tsx
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Selector from "./Selector";
 import { legends } from "./LegendsData"; // Import legends data
@@ -20,13 +20,6 @@ const App = () => {
         : (prev - 1 + legends.length) % legends.length
     );
   };
-
-  // Log the selected values to debug hydration issues
-  useEffect(() => {
-    console.log("Selected Legend:", selectedLegend.name);
-    console.log("Selected Skin:", selectedSkin);
-    console.log("Selected Color:", selectedColor);
-  }, [selectedLegend.name, selectedSkin, selectedColor]);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-800 text-white">
