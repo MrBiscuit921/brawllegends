@@ -9,16 +9,15 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  
 };
 
 export default function RootLayout() {
   return (
     <html lang="en">
-      <meta name="google-adsense-account" content="ca-pub-2469585557731671"></meta>
-      <head>
-        <AdSense pId="ca-pub-2469585557731671" />
-      </head>
+      <meta
+        name="google-adsense-account"
+        content="ca-pub-2469585557731671"></meta>
+      <AdSense pId="ca-pub-2469585557731671" />
       <body>
         <div>
           <Page />
